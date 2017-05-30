@@ -1,0 +1,22 @@
+
+1.  select * from articles where author_id=8;
+    select title from articles where author_id=8;
+2.  select * from cities where province_id = 14;
+3.  select author_id from articles where title = 'Coding Bootcamps and Emotional Labor';
+    select name from authors where id = 4;
+4.  select * from countries where name = 'Canada';
+    select * from provinces where country_id = 1;
+    select count (name) from provinces where country_id = 1;
+5.  select id from residences where address = '4740 McDermott Street';
+    select * from persons where residence_id=9;
+    select count(name) from persons where residence_id=9;
+6.  select * from cities where id in(Select city_id from residences where address='4740 McDermott Street');
+7.  select * from provinces where id = 14;
+8.  select * from countries where id = 1;
+9.  select * from persons where name = 'Destini Davis';
+    select * from residences where id = 2;
+    select * from cities where id = 8;
+    select * from provinces where id = 14;
+    select * from countries where id = 1;
+10. select id from authors where name = 'Aditya Mukerjee';
+    select count (name) from authors where id = 2;
